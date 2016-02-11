@@ -1,0 +1,26 @@
+<ion-header-bar class="bar bar-header bar-positive">
+	<h1 class="title">Pokémon API</h1>
+</ion-header-bar>
+
+<ion-content>
+	<ion-refresher pulling-text="Pull to Refresh" refreshing-text="Loading..." on-refresh="loadpkms()">
+	</ion-refresher>
+
+	<ion-list id="mainList">
+
+
+		<ion-item ng-repeat="abilities in pokename" class="item item-thumbnail-left">
+
+
+			
+
+			<h3>Abilities: {{pokename.abilities }}</h3>
+			<h3>Catch Rate: {{pokename.catch_rate }}</h3>
+			<h3>Abilities: {{pokename.objects.abilities }}</h3>
+			
+			</ion-item>
+	</ion-list>
+</ion-content>
+<ion-footer-bar class="bar-positive">
+Copyright 2016
+</ion-footer-bar>
